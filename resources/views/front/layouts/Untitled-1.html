@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>@yield('title') PAGE UTAMA!</title>
+  </head>
+  <body>
+    <!--SESION NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+        <img src="{{asset('uploads/slide/zB7jLUG5OA4SjEmmgZmIkFupSBAkEcHqgIw5R1yj.jpg')}}" class="d-block" width="100" height="70"alt="...">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </a>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Menu</a>
+            </li>
+             <li class="nav-item active">
+              <a class="nav-link" href="/">Artikel</a>
+            </li>
+             <li class="nav-item active">
+              <a class="nav-link" href="/">contact</a>
+            </li>
+          </ul>
+          <form class="form" action="/" method="GET" role="search">
+          {{-- {{ csrf_field() }} --}}
+             <div class="form-group w-100 mb-3">
+                <label for="search" class="d-block mr-2"></label>
+                <input type="text" name="search" class="form-control w-75 d-inline" id="search" placeholder="Masukkan keyword">
+                <button type="submit" class="btn btn-primary mb-1">cari</button>
+            </div>
+        </form>
+        </div>
+      </nav>
+   <!--SESION  AKHIR NAVBAR-->
+ @yield('content')
+  <!--footer-->
+ <!-- @include('front.includes.footer') -->
+
+ <!-- akhir footer-->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </body>
+</html>
