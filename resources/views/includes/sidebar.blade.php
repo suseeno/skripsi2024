@@ -177,29 +177,6 @@
                                     </a>
                                    </li>
                                 <li>
-                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href=""
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                 <!-- <li>
-                    <a href=""
-                    onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
-                             <i class="fa-solid fa-"></i>
-                    {{ __('LOGOUT') }}
-                </a>
-                <form id="logout-form" action="" method="POST" class="d-none">
-                    @csrf
-                </form>
-              </li> 
-
-        </div>
-    </div>
-</div>
+                </div>
+                </div>
+            </div> 

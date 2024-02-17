@@ -45,7 +45,7 @@
 					      </td>
 					      <td>Rp.{{number_format($dt['price'],0,',','.')}},</td>
 					      <td>
-							  <a class="btn btn-danger btn-sm" href="{{route('removeItem',['id' =>$dt['item']['id']])}}"><span class="oi oi-x"></span></a>
+							  <a class="btn btn-danger btn-sm" href="{{route('removeItem', ['id' => $dt['item']['id']])}}"><span class="oi oi-x"></span></a>
 					      </td>
 					    </tr>
 					    @endforeach

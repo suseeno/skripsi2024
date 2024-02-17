@@ -36,7 +36,7 @@
 
 		<div class="main-panel">
 			<div class="content">
-    @yield('content')
+                @yield('content')
 			</div>
             @include('includes.footer')
 		</div>
